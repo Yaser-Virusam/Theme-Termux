@@ -21,7 +21,7 @@ read -p " Does you want to install Parrot Shell in Termux?(Yes/No) : " input
 
 if [[ $input == Yes || $input == yes || $input == y || $input == Y ]]; then
     clear
-    cp bash.bashrc $HOME
+    cd bash.bashrc $HOME
     cd /data/data/com.termux/files/usr/etc
     rm -rf motd
     rm -rf bash.bashrc
